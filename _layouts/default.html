@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Table of Content open: -->
+<!-- 1. Header
+2. Home Page: What is Lucky Water?
+3. Product information
+4. Benefits
+5. Location
+6. Upcoming Events
+7. Footer
+<!-- Table of Content close: -->
+
+<!-- Head open: Does not show on the website -->
+  <head>
+    <meta charset="utf-8">
+    <title>{{page.title}}</title>
+    <!-- include all the meta descriptions and etc -->
+<!-- Universal reset: Normalize style sheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link <link href="https://fonts.googleapis.com/css?family=Oswald|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.4/gridlex.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- TODO: Icon font, little icons from other site -->
+<!-- Link to css stylesheet, stay on the bottom of the head section -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+<!-- Head close -->
+
+  <body>
+
+{% include header.html %}
+
+<!-- Main open -->
+    <div class="main" id="home">
+    {{content}}
+    </div>
+<!-- Main close -->
+
+{% include footer.html %}
+
+  </body>
+</html>

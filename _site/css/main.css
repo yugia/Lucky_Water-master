@@ -1,0 +1,698 @@
+/*<!-- Table of Content open: -->
+1. Header
+2. Home Page: What is Lucky Water?
+3. Product information
+4. Benefits
+5. Location
+6. Upcoming Events
+7. Footer
+<!-- Table of Content close: -->*/
+
+/*More reset styles open:*/
+html {
+  box-sizing: border-box;
+  }
+  html, body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+*, *:before, *:after, figure {
+  box-sizing: inherit;
+  padding:0;
+  margin:0;
+}
+/*More reset styles close*/
+
+/*Universal styles open*/
+/*.main{
+  padding-top:100px
+}*/
+a {
+  text-decoration: none;
+  color: #133C55;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:hover {
+  color: white;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  /*color: white;*/
+}
+
+h1 span {
+  border-bottom: 3px solid red;
+  display: inline-block;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  /*color: white;*/
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+}
+
+h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9rem;
+  /*color: #133C55;*/
+  text-align: left;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+/* Banner Styles */
+
+section {
+  position: relative;
+}
+
+.home .dark-overlay {
+  padding-top: 100px;
+}
+
+.home-banner-content {
+  min-height: 100vh;
+  padding: 0px 10%;
+}
+
+.bottle_description {
+  text-align: right;
+}
+
+.overlay {
+  position: absolute;
+  height:100%;
+  bottom:0;
+  width: 100%;
+  margin:0;
+}
+.dark {
+  background-color: rgba(60,60,60,0.5);
+  color: white;
+}
+.light {
+  background-color: rgba(250,250,250,0.5);
+  color: rgb(60,60,60);
+}
+
+
+*---------------*/
+/***** Chico *****/
+/*---------------*/
+.grid {
+	position: relative;
+	margin: 0 5%;
+	padding: 5%, 2%;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+.grid figure {
+	position: relative;
+	overflow: hidden;
+	max-height: 360px;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+  margin: 0 5%;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+  height:auto;
+	max-width: none;
+  width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 0.5em;
+	color: #fff;
+	font-size: 0.2em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+figure.effect-chico img {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.12);
+	transform: scale(1.12);
+}
+
+figure.effect-chico:hover img,
+figure.effect-chico.hover_effect img {
+	opacity: 0.5;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-chico figcaption {
+	padding: 1em;
+}
+
+figure.effect-chico figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	content: '';
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+figure.effect-chico figcaption::before,
+figure.effect-chico p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-chico h2 {
+	padding: 10% 0 20px 0;
+  font-size: 2.5rem;
+}
+
+figure.effect-chico p {
+	margin: 0 auto;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+  color: white;
+}
+
+figure.effect-chico:hover figcaption::before,
+figure.effect-chico:hover p,
+figure.effect-chico.hover_effect figcaption::before,
+figure.effect-chico.hover_effect p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+@media screen and (max-width: 50em) {
+	.content {
+		padding: 0 10px;
+		text-align: center;
+	}
+	.grid figure {
+		display: inline-block;
+		float: none;
+		margin: 10px auto;
+		width: 100%;
+	}
+}
+/*Ends Chico transition*/
+
+nav {
+  text-align: center;
+}
+
+.padding {
+  padding:5%;
+}
+
+.padding-top {
+  padding-top: 1.2%;
+}
+/*White faded border boxes*/
+.white_border {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2%;
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+}
+
+/*Universal styles close*/
+
+/*Header Styles open*/
+header {
+position: fixed;
+width: 100%;
+background-color: rgba(96, 204, 245,1);
+height:100px;
+z-index: 5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 10px;
+  height: 100px;
+}
+
+.logo img {
+  max-width: none;
+  height: 100%;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a.logo {
+  margin-left: 220px;
+}
+
+nav a {
+  line-height: 100px;
+  padding: 0 20px;
+  display:block;
+}
+
+.nav_items {
+  display: flex;
+  padding-right: 13%;
+}
+
+a:hover {
+  background-color: rgba(0, 0 ,0 ,0.2);
+}
+
+/* Utility classes */
+
+.left {
+  text-align: left;
+}
+
+.banner {
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.boxes {
+  display: block;
+}
+
+/*Header Styles close*/
+
+
+/*home section open*/
+.home {
+  background-image:url("/images/home_background.jpg");
+}
+
+.bottle_image img {
+  margin-bottom: -100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  right: 13vw;
+  z-index: 4;
+  top: -4vh;
+  width: 25vw;
+}
+
+.bottle_description p {
+  margin-left: 7%;
+}
+/*home section close*/
+
+/*product information section open*/
+.product_info {
+  background-image: url("/images/product_info2.jpg");
+}
+
+.product_info .padding {
+  padding: 5% 5% 0;
+}
+
+.product_info div p {
+  padding-top: 4%;
+  padding-bottom: 5%;
+}
+
+/*product information section close*/
+
+/*benefits section open*/
+.benefits {
+  background-image: url("/images/benefits.jpg");
+  min-height: 100vh;
+}
+
+/*benefits section close*/
+
+/*location section open*/
+
+.map img {
+  display: block;
+  height: 50%;
+  width: 100%;
+  margin-top: 7%;
+}
+
+.enlarge {
+  transform: scale(1);
+  transition: all 0.5s ease;
+  transform-origin: 0 0;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.enlarge.active {
+  transform: scale(1);
+  margin-top: 0;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.location h2 {
+  padding-top: 10%;
+}
+
+.location p {
+  padding-top: 3%;
+  padding-bottom: 10%;
+}
+
+/*location section close*/
+
+/*updated events section open*/
+.events-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.events {
+  background-image: url("/images/events.jpg");
+}
+
+.events h2 {
+  padding-top: 5%;
+  color: white;
+}
+
+.events p {
+  font-size: 1.7rem;
+}
+/*updated events section close*/
+
+/*contact us and footer section open*/
+footer {
+  background-color: #133C55;
+  background-size: cover;
+  padding: 1%;
+}
+
+footer h2 {
+  padding: 0 2% 2%;
+  text-align: left;
+  color: white;
+}
+
+footer h3, {
+  font-size: 2rem;
+  padding-top: 2%;
+  text-align: left;
+  color: white;
+}
+
+footer h4, footer h4 a {
+  font-size: 1.2rem;
+}
+
+footer h3, footer h4 {
+  text-align: left;
+  padding-left: 20%;
+  color: white;
+}
+
+footer p{
+  text-align: right;
+  font-family: Arial;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.footer-content {
+  margin:0 0;
+  padding-right: 60%;
+}
+
+footer a {
+  font-size: 0.8rem;
+  color: white;
+}
+
+footer div {
+  display: flex;
+}
+/*contact us and footer section close*/
+
+/*hamburger for nav-from dan!*/
+.burger-button {
+  position:fixed;
+  top: 38px;
+  right: 38px;
+  z-index: 9999999999;
+  padding: 8px;
+}
+/*this is where you can chand the color of the buttons*/
+.burger-button span{
+  width: 25px;
+  border: 2px solid black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: 02px;
+}
+
+.burger-bottom{
+  bottom: 02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+  transform: rotateZ(270deg);
+  border-color: rgba(0,0,0,0)
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: #f9f9f9;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 99999999;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  padding: 15px 11px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #C3BFBC;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+
+.burger-menu li{list-style:none}
+/*
+.dropdown-nav:hover .dropdown-content {
+    display: block;
+} */
+
+/*Responsive Design*/
+
+.mobileshow {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+
+  .nav_items {
+    padding-right: 0;
+  }
+
+  a.logo {
+    margin-left: 10px;
+  }
+
+  .mobileshow {
+    display: inline-block;
+  }
+
+  .mobilehide {
+    display: none!important;
+  }
+
+  .home img {
+    margin-top: 38%;
+  }
+}
+
+@media (max-width: 900px) {
+
+h1 {
+  padding-top: 15%;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+.home p {
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+h1, h2, h3, p {
+  display: center
+}
+
+.home, .product_info, .benefits, .location, .events {
+  min-height: 0;
+  height: auto;
+}
+
+.contact h2 {
+  font-size: 2rem;
+}
+
+.bottle_description {
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: center;
+}
+
+#product {
+  text-align: center;
+}
+
+p {
+  line-height: 1.2;
+  font-size: 1.2rem;
+}
+
+.benefits h2 {
+  padding-top: 0;
+}
+
+.location {
+  padding-top: 0;
+}
+
+.location h2 {
+  margin-top: 0;
+}
+
+.location {
+  padding-top: 0;
+}
+
+.location div p, .location h2 {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.map h3, .map p {
+  margin-left: 50px;
+}
+
+.events p {
+  font-size: 1rem;
+}
+
+footer h3, footer h4, footer div a {
+  font-size: 0.8rem;
+}
+
+}
+
+@media (max-width: 800px) {
+  .logo img {
+    padding-left: 0;
+  }
+
+  h1 {
+    margin-top: 20%;
+    font-size: 1.8rem;
+    }
+  }
+
+  p  {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 500px) {
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+}
